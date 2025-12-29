@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+
+
+#titulo{
+    font-family: "Jersey 10", sans-serif;
+    font-size: 40px;
+    margin: 20px 0;
+    text-align: center;
+    color:mediumaquamarine;
+}
+
+.game{
+    background-color: mediumaquamarine;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.tabuleiro{
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    gap: 12px;
+    justify-content: center;
+}
+
+
+
+.carta {
+    width: 100px;
+    height: 100px;
+    background: antiquewhite;
+    border-radius: 8px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: transparent;
+    transition: transform 0.3s;
+}
+
+.carta:hover {
+    transform: scale(1.05);
+}
+
+.carta.virada:hover {
+    transform: none;
+}
+
+.carta.virada {
+    background: #fff;
+    color: #000;
+    cursor: default;
+}
+
+
+
+footer{
+    padding-top: 15px;
+    text-align: center;
+    color: gray;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.placar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 20px;
+    color: antiquewhite;
+}
+
+.botao{
+    text-align: center;
+}
+
+button{
+    padding: 8px 15px;
+    background-color: antiquewhite;
+    border: 1px solid gray;
+    border-radius: 15px;
+    color: mediumaquamarine;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: mediumaquamarine;
+    color: white;
+    cursor: pointer;
+}
